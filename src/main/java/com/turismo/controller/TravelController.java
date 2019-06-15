@@ -31,14 +31,14 @@ public class TravelController {
 	 * INSERIR
 	   {
 	    "origem": {
-		    "id": 5,
-		    "descricao": "Beto Carrero World",
-		    "diaria": 280
-		},
+    			"id": 5,
+    			"descricao": "Beto Carrero World",
+   				"diaria": 280
+				},
 		"destino": {
-		    "id": 6,
-		    "descricao": "Nárnia",
-		    "diaria": 1000
+    		"id": 6,
+    		"descricao": "Narnia",
+    		"diaria": 1000
 		},
 	    "saida": "19/09/2019",
 	    "volta": "10/10/2019"
@@ -46,14 +46,14 @@ public class TravelController {
 	 * 
 	 * ALTERAR
 	   {
-	    "id": 1,
+	    "id": 3,
 	    "origem": {
 		    "id": 5,
 		    "descricao": "Disney",
 		    "diaria": 2800
 		},
 		"destino": {
-		    "id": 6,
+		    "id": 4,
 		    "descricao": "Brotas",
 		    "diaria": 50
 		},
@@ -75,7 +75,7 @@ public class TravelController {
 	//http://localhost:8080/travel/file
 	@GetMapping("travel/file")
 	public String createFile(){
-		String arquivo = "D:\\Programação\\Projetos Java\\ProjTurismo\\relatorio.txt";
+		String arquivo = "C:\\Users\\Home\\Desktop\\relatorio.txt";
 		
 		GenerateFile editorArquivo = new GenerateFile(arquivo, true);
 		
